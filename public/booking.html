@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head> 
+    <title>Booking</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" >
+</head>
+
+<body>
+    <div class = "container.form">
+        <!-- <form action = "#"> -->
+            <h1>Booking Page</h2>
+
+            <a href='create.html'>New user?</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href='index.html'>Search flight</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href='checkIn.html'>Check In</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href='cancellation.html'>Cancellantion</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href='about.html'>About us</a>
+            <p>All passenger must have passenger ID</p>
+            <p><input type="radio" id="direct" name="flight_Type" value="direct">
+                <label>Direct</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" id="indirect" name="flight_Type" value="indirect">
+                <label>Indirect</label>
+            </p>
+            <div class = "form.field">
+                <p>*Enter both flight ID iff indirect flight*</p>
+                <p>Flight ID1:<input type = "id" placeholder="Flight ID1" id="flightId1">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    Flight ID2:<input type = "id" placeholder="Flight ID2" id="flightId2">
+                </p>
+                 
+            </div>
+
+            <div class = "form.field" >
+                <p>
+                Number of Passengers:&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name = "select" id="numberOfPeople">
+                    <option value = "1"> 1 person </option>
+                    <option value = "2"> 2 people </option>
+                    <option value = "3"> 3 people </option>
+                    <option value = "4"> 4 people </option>
+                    <option value = "5"> 5 people </option>
+                    <option value = "6"> 6 people </option>
+                </select>
+                </p>
+            </div>
+
+            <div class = "form.field">
+                <div>Passenger ID1:
+                <input type = "pid" placeholder="Your Passenger ID" id="passenger1">
+            
+                &nbsp;&nbsp;
+            
+                Passenger ID2:
+                <input type = "pid" placeholder="Your Passenger ID" id="passenger2">
+            
+                &nbsp;&nbsp;
+            
+                Passenger ID3:
+                <input type = "pid" placeholder="Your Passenger ID" id="passenger3"></div>
+            
+                &nbsp;&nbsp;
+            
+                <div>Passenger ID4:
+                <input type = "pid" placeholder="Your Passenger ID" id="passenger4">
+            
+                &nbsp;&nbsp;
+            
+                Passenger ID5:
+                <input type = "pid" placeholder="Your Passenger ID" id="passenger5">
+            
+                &nbsp;&nbsp;
+            
+                Passenger ID6:
+                <input type = "pid" placeholder="Your Passenger ID" id="passenger6"></div>
+            </div>
+            
+
+            <div class= "form.field">
+                <p>Class:
+                <select name = "dropdown" id="class">
+                    <option value="economy">Economy</option>
+                    <option value="business">Business</option>
+                </p>
+                </select>
+            </div>
+
+            <div class= "form.field">
+                <p>
+                    <label for="ccn">Credit Card Number:</label>
+                    <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"> 
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+
+                    Card Expiration:
+                    <select name='expireMM' id='expireMM'>
+                        <option value=''>Month</option>
+                        <option value='01'>January</option>
+                        <option value='02'>February</option>
+                        <option value='03'>March</option>
+                        <option value='04'>April</option>
+                        <option value='05'>May</option>
+                        <option value='06'>June</option>
+                        <option value='07'>July</option>
+                        <option value='08'>August</option>
+                        <option value='09'>September</option>
+                        <option value='10'>October</option>
+                        <option value='11'>November</option>
+                        <option value='12'>December</option>
+                    </select> 
+                    <select name='expireYY' id='expireYY'>
+                        <option value=''>Year</option>
+                        <option value='2021'>2021</option>
+                        <option value='2022'>2022</option>
+                        <option value='2023'>2023</option>
+                        <option value='2024'>2024</option>
+                        <option value='2025'>2025</option>
+                        <option value='2026'>2026</option>
+                        <option value='2027'>2027</option>
+                        <option value='2028'>2028</option>
+                        <option value='2029'>2029</option>
+                        <option value='2030'>2030</option>
+                    </select> 
+                    <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4"/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    CVV:
+                    <input class="inputCard" type="password" id="cvv" maxlength="3" placeholder="###"/>
+                </p>
+            </div>
+
+            <div class= "form.field">
+
+                <p> Card holder:
+                <input type = "text" placeholder="Card holder's name" id="cardHolder">
+                </p>
+
+            </div>
+
+            
+            <p>
+            <button class="btn" onclick="getBookingData()">Submit</button>
+            </p>
+    </div>  
+    <p id="booking"> </p> 
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

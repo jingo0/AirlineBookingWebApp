@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title class="title"> Airline Booking </title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css" >
+	
+	
+</head>
+
+<body>	
+	
+	<h1> Divided Airlines </h1>
+	<body style = "background: url(https://cdn.wallpapersafari.com/36/78/NkR7bo.jpg)"></body>
+	<a href="booking.html">Booking</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="create.html">New user</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href='checkIn.html'>Check In</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href='cancellation.html'>Cancellantion</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href='about.html'>About us</a>
+	<div>
+		<p>
+		<form>
+			<label for="Departure city">Departure city:</label>
+			<input type="text" id="dcity" name="dcity">
+			
+			<label for="Arrival city">Arrival city:</label>
+			<input type="text" id="acity" name="acity">
+			
+			<p>		
+					
+					<label for="start">Departure date from:</label>
+
+					<input type="date" id="start_date" name="trip-start"
+						value=""
+						min="2020-01-01" max="2022-12-31">
+						
+					<label for="start">Departure date to:</label>
+
+					<input type="date" id="end_date" name="trip-start"
+						value=""
+						min="2020-01-01" max="2022-12-31">	
+				
+				
+			</p>Select class: 
+				<select name = "dropdown" id="class" >
+					<option value = "economy" selected>Economy</option>
+					<option value = "business">Business</option></select>
+					<br>
+					<input type="radio" id="direct" name="flightType" value="direct">
+					<label>Direct</label><br>
+
+					<input type="radio" id="indirect" name="flightType" value="indirect">
+					<label>Indirect</label><br>
+			
+			
+			<p><button type="button" id="search_flight" onclick="printdemo()" >search</button></p>
+		</form>
+		</p>
+	    
+	</div>
+
+	<p id="search_result"> </p>
+	<table id="table"></table>
+	<script type="text/javascript" src="main.js"></script>
+	
+</body>
+</html> 

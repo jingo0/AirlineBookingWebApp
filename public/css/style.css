@@ -1,0 +1,96 @@
+h1 {
+    text-align: center;
+    margin: 50px 0px 20px 0px;
+  }
+
+
+
+html {
+    margin: auto;
+}
+
+body {
+    background: url(https://cdn.wallpapersafari.com/36/78/NkR7bo.jpg);
+}
+  
+button {
+    border-radius: 0;
+  }
+  
+  button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  input,
+  button,
+  select,
+  optgroup,
+  textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  button,
+  input {
+    overflow: visible;
+  }
+  
+  button,
+  select {
+    text-transform: none;
+  }
+  
+  [role=button] {
+    cursor: pointer;
+  }
+  
+  select {
+    word-wrap: normal;
+  }
+  
+  button,
+  [type=button],
+  [type=reset],
+  [type=submit] {
+    -webkit-appearance: button;
+  }
+  
+  button:not(:disabled),
+  [type=button]:not(:disabled),
+  [type=reset]:not(:disabled),
+  [type=submit]:not(:disabled) {
+    cursor: pointer;
+  }
+  
+  button::-moz-focus-inner,
+  [type=button]::-moz-focus-inner,
+  [type=reset]::-moz-focus-inner,
+  [type=submit]::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+  }
+  
+  input[type=radio],
+  input[type=checkbox] {
+    box-sizing: border-box;
+    padding: 0;
+  }
+  
+  textarea {
+    overflow: auto;
+    resize: vertical;
+  }
+
+  title {
+    text-align: center;
+    margin: 50px 0px 20px 0px;
+  }
+  

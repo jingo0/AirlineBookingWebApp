@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+ <head> 
+    <title class="title">Create Account </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" >
+ </head>
+
+
+<body>      
+            <h1> Create User </h1>
+            <a href='booking.html'>Booking</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href='index.html'>Search flight</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href='checkIn.html'>Check In</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href='cancellation.html'>Cancellantion</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href='about.html'>About us</a>
+
+            <div class = "form.field">
+                <p>Your First Name:&nbsp;
+                <input type = "text" placeholder="Your First Name" id="firstName"></p>
+            </div>
+
+            <div class = "form.field">
+                <p>Your Last Name:&nbsp;
+                <input type = "text" placeholder="Your Last Name" id="lastName"></p>
+            </div>
+
+            <div class = "form.field">
+                <p>Your Passwords:&nbsp;
+                <input type = "password" id = "password" name = "Passwords"
+                pattern=".{4,30}" required title="4 to 30 characters" placeholder="No More than 30" maxlength="30"></p>
+            </div>
+
+            <div class = "form.field">
+                <p>Your Email:&nbsp;
+                <input type = "email" placeholder="Your Email Address" id="email"></p>
+            </div>
+
+            <div class = "form.field">
+                <p>Your Phone number:&nbsp;
+                <input type = "tel" placeholder="Your Phone Number" id="phoneNum" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"></p>
+            </div>
+
+            <br>
+            <br>
+            <!--this button will show the uesr their id--> 
+            <button id="creatPagesubmit" onclick="newUser()">Submit</button>
+
+
+            <!-- <br>
+            <br>
+            <br>
+            <a href="index.html">
+                <button>Searching Page</button>
+                </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="booking.html">
+                <button>Booking Page</button>
+               </a> -->
+
+               <script type="text/javascript" src="main.js"></script>
+
+        </body>
+
+</html>
